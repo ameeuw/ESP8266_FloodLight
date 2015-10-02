@@ -6,6 +6,8 @@ This repository holds the code for a interenet connected RGB light. The hardware
 
 Replacing the internal logic of the floodlight and using an Espressif ESP8266 ESP-03 board to generate the necessary PWM signals, enables this floodlight to be remotely controlled from anywhere in the world.
 
+To eliminate the need of dynamic DNS services I make use of a server side bridge demon. This demon is necessary to connect the lamp TCP socket connection with the widget running a client side WebSocket connection. The code of the webserver bridge is written for node-js and will be made available soon. 
+
 --------------
 
 The source scripts are meant for use with the nodeMCU lua interpreting firmware. Get the latest firmware from their repository (https://github.com/nodemcu/nodemcu-firmware).
